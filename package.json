@@ -2,7 +2,9 @@
   "name": "@org/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx start firstapp"
+  },
   "private": true,
   "dependencies": {
     "@expo/metro-config": "~0.17.3",
@@ -10,6 +12,9 @@
     "expo": "~50.0.3",
     "expo-splash-screen": "~0.26.1",
     "expo-status-bar": "~1.11.1",
+    "mobx": "^6.12.3",
+    "mobx-react": "^9.1.1",
+    "mobx-state-tree": "^5.4.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.73.2",
@@ -21,6 +26,7 @@
   "devDependencies": {
     "@config-plugins/detox": "~7.0.0",
     "@expo/cli": "~0.16.5",
+    "@nx/cypress": "18.3.3",
     "@nx/detox": "18.3.3",
     "@nx/eslint": "18.3.3",
     "@nx/eslint-plugin": "18.3.3",
@@ -41,9 +47,11 @@
     "@typescript-eslint/parser": "^7.3.0",
     "babel-jest": "^29.4.1",
     "babel-preset-expo": "~10.0.0",
+    "cypress": "^13.6.6",
     "detox": "~20.18.1",
     "eslint": "~8.57.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-cypress": "^2.13.4",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-jsx-a11y": "6.7.1",
     "eslint-plugin-react": "7.32.2",

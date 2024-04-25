@@ -60,3 +60,35 @@ It will show tasks that you can run with Nx.
 - [Join the community](https://nx.dev/community)
 - [Subscribe to the Nx Youtube Channel](https://www.youtube.com/@nxdevtools)
 - [Follow us on Twitter](https://twitter.com/nxdevtools)
+
+
+
+----------------------------------------------------------------------------------------------
+## REFERENCES
+    [text](https://blog.nrwl.io/step-by-step-guide-to-creating-an-expo-monorepo-with-nx-30c976fdc2c1)
+
+1. Create Nx project
+    ```
+    npx create-nx-workspace@latest --preset=expo --appName=your-app-name
+    appName=your-app-name = org
+    ```
+
+2. nx add @nx/expo
+
+3. Add a new application to your workspace
+    ```
+    nx g @nx/expo:app my-app
+    ```
+5. Add libraries/shared components
+    ```
+    npx nx generate @nx/expo:lib ui
+    ```
+6. To create a component in the ui library, run:
+    ```
+    npx nx generate @nx/expo:component carousel --project=ui --export
+    ```
+4. Start/Run project
+    ```
+    nx start <workspace>
+    firstapp
+    ```# rn-nx-monorepo
